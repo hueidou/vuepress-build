@@ -28,4 +28,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ format('hueidou/vuepress-build:{0}', github.ref_name == 'master' ? 'latest' : github.ref_name }}
+            hueidou/vuepress-build:latest
+            ${{ format('hueidou/vuepress-build:{0}', github.ref_name }}
